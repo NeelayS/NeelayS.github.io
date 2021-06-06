@@ -122,8 +122,14 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-.profilePicture {
+/* .profilePicture {
   width:100%;
   max-width:100%;
+  border-radius: 50%;
+} */
+
+.profilePicture {
+  width:80%;
+  max-width:80%;
   border-radius: 50%;
 }
