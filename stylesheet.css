@@ -96,7 +96,7 @@ heading {
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700
 }
 
@@ -131,5 +131,5 @@ span.highlight {
 .profilePicture {
   width:80%;
   max-width:80%;
-  border-radius: 50%;
+  border-radius: 40%;
 }
