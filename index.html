@@ -170,6 +170,7 @@
                   <ul>
                     <li>
                   <papertitle>KD-Lib</papertitle>
+                  <span id="kdstars"></span>
                   <br>
                   <a href="https://github.com/SforAiDl/KD_Lib">GitHub</a>
                   /
@@ -188,13 +189,39 @@
                   </li>
                   </ul>
                 </td>
-              <!-- </tr> -->
+                <script>
+                  var getJSON = function(url, callback) {
+                      var xhr = new XMLHttpRequest();
+                      xhr.open('GET', url, true);
+                      xhr.responseType = 'json';
+                      xhr.onload = function() {
+                        var status = xhr.status;
+                        if (status === 200) {
+                          callback(null, xhr.response);
+                        } else {
+                          callback(status, xhr.response);
+                        }
+                      };
+                      xhr.send();
+                  };
+                  getJSON("https://api.github.com/repos/SforAiDl/KD_Lib",
+                          function(err, data) {
+                            if (err == null) {
+                              var t = document.getElementById('kdstars');
+                              t.innerHTML = "(<img src='data/img/git_star.jpg' width=10> ";
+                              t.innerHTML += data.stargazers_count + " )";
+    
+                            }
+                          });
+                </script>
+              </tr>
 
-              <!-- <tr> -->
+              <tr>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <ul>
                     <li>
                   <papertitle>EzFlow</papertitle>
+                  <span id="ezflowstars"></span>
                   <br>
                   <a href="https://github.com/neu-vig/ezflow">GitHub</a>
                   /
@@ -206,13 +233,39 @@
                   </li>
                   </ul>
                 </td>
-              <!-- </tr> -->
+                <script>
+                  var getJSON = function(url, callback) {
+                      var xhr = new XMLHttpRequest();
+                      xhr.open('GET', url, true);
+                      xhr.responseType = 'json';
+                      xhr.onload = function() {
+                        var status = xhr.status;
+                        if (status === 200) {
+                          callback(null, xhr.response);
+                        } else {
+                          callback(status, xhr.response);
+                        }
+                      };
+                      xhr.send();
+                  };
+                  getJSON("https://api.github.com/repos/neu-vig/ezflow",
+                          function(err, data) {
+                            if (err == null) {
+                              var t = document.getElementById('ezflowstars');
+                              t.innerHTML = "(<img src='data/img/git_star.jpg' width=10> ";
+                              t.innerHTML += data.stargazers_count + " )";
+    
+                            }
+                          });
+                </script>
+              </tr>
 
-              <!-- <tr> -->
+              <tr>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <ul>
                     <li>
                   <papertitle>VFormer</papertitle>
+                  <span id="vformerstars"></span>
                   <br>
                   <a href="https://github.com/SforAiDl/vformer">GitHub</a>
                   /
@@ -224,6 +277,31 @@
                   </li>
                   </ul>
                 </td>
+                <script>
+                  var getJSON = function(url, callback) {
+                      var xhr = new XMLHttpRequest();
+                      xhr.open('GET', url, true);
+                      xhr.responseType = 'json';
+                      xhr.onload = function() {
+                        var status = xhr.status;
+                        if (status === 200) {
+                          callback(null, xhr.response);
+                        } else {
+                          callback(status, xhr.response);
+                        }
+                      };
+                      xhr.send();
+                  };
+                  getJSON("https://api.github.com/repos/SforAiDl/vformer",
+                          function(err, data) {
+                            if (err == null) {
+                              var t = document.getElementById('vformerstars');
+                              t.innerHTML = "(<img src='data/img/git_star.jpg' width=10> ";
+                              t.innerHTML += data.stargazers_count + " )";
+    
+                            }
+                          });
+                </script>
               </tr>
 
 
